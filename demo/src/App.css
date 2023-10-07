@@ -1,38 +1,84 @@
-.App {
+.box {
+  margin-left: 49%;
+}
+
+.box1 {
+  background-color: rgb(207, 117, 75);
+  width: 31rem;
+  height: 20rem;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.167);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box1:hover {
+  animation: float 1s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box1 > img {
+  width: 15rem;
+  height: 15rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+@keyframes float {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(10deg);
   }
+}
+
+@media (max-width: 768px) {
+  .box1 {
+    width: auto;
+    height: auto;
+  }
+}
+
+.type {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  width: fit-content;
+  overflow: hidden;
+  animation: typing 5s;
+  transition: smooth;
+  white-space: nowrap;
+  margin-left: 30px;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.left-container {
+  margin-left: 30px;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: 9px 9px rgba(0, 0, 0, 0.167);
+  width: 35rem;
+  height: 9rem;
+  background-color: rgba(255, 255, 255, 0.545);
+}
+.custom-table {
+  text-align: center;
+  width: 35rem;
+  height: 9rem;
+  border-radius: 10px;
+  box-shadow: 9px 9px rgba(0, 0, 0, 0.167);
+}
+
+.links {
+  margin-right: 35px;
+}
+nav {
+  mix-blend-mode: color-burn;
+}
+nav:hover {
+  cursor: pointer;
+}
+.container {
+  height: 10rem;
+  width: 20rem;
+  background-color: white;
 }
